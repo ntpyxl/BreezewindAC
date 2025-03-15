@@ -1,0 +1,28 @@
+@layer utilities {
+    @media (min-width: 48rem) {
+        .md\:space-x-8 > :not(:last-child) {
+            all: unset;
+        }
+    }
+}
+
+#welcomeBanner { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	position: relative;
+	background: url(https://cielowigle.com/wp-content/uploads/2020/07/ac-fan-failure.jpg)no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 94vh;
+}
+
+.welcomeBannerText {
+    position: absolute;
+    right: 1%;
+    top: 20%;
+}
+
+.textShadow {
+    text-shadow: 6px 6px 12px #000;
+}
