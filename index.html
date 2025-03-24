@@ -1,19 +1,9 @@
-<!-- 
-Hero Section: A striking image of an air conditioning unit with a tagline like "Reliable Cooling Solutions for Your Comfort."
-
-Brief Introduction: A short paragraph highlighting what makes your business stand out, such as:
-"With years of experience, top-tier customer service, and cutting-edge technology, we ensure your home or business stays cool all year round."
-
-Mission & Vision:
-Mission: "To provide high-quality, energy-efficient air conditioning solutions with excellent customer service."
-Vision: "To be the leading provider of innovative and sustainable cooling solutions."
--->
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/windbreeze_icon.png" type="image/x-icon">
         <title>Breezewind</title>
 
         <!-- TAILWIND CSS -->
@@ -22,6 +12,9 @@ Vision: "To be the leading provider of innovative and sustainable cooling soluti
         <!-- FLOWBITE CSS -->
         <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
 
+        <!-- ICONS CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
         <!-- CUSTOM STYLES -->
         <link rel="stylesheet" href="styles.css">
     </head>
@@ -29,7 +22,7 @@ Vision: "To be the leading provider of innovative and sustainable cooling soluti
         <nav class="bg-white border-gray-200 dark:bg-gray-900">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Breezewind Logo" />
+                    <img src="images/windbreeze_icon.png" class="h-8" alt="Breezewind Logo" />
                     <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Breezewind</span>
                 </a>
                 <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
@@ -63,23 +56,28 @@ Vision: "To be the leading provider of innovative and sustainable cooling soluti
             </div>
         </section>
 
-        <section id="aboutUs" class="p-3 justify-items-center">
-            <h2 class="text-6xl font-semibold text-black pt-3 mt-3">About Us</h2>
-            <p class="text-lg font-medium text-blue-500 py-1">Our goal in providing you breezy comfort.</p>
+        <section id="aboutUs" class="px-3 pt-12 pb-3 justify-items-center">
+            <h2 class="text-6xl font-semibold text-black text-center pt-3 mt-3">About Us</h2>
+            <p class="text-lg font-medium text-blue-500 text-center py-1">Our goal in providing you breezy comfort.</p>
 
-            <div class="grid grid-cols-12 gap-10 mx-72 py-3 mt-8">
-                <div class="col-span-7">
-                    With years of experience, top-tier customer service, and cutting-edge technology, we ensure your home or business stays cool all year round.
+            <div class="grid grid-cols-12 md:gap-6 md:mx-72 py-3 mt-8">
+                <div class="col-span-12 md:col-span-7 bg-blue-50 p-5 mb-5">
+                    <div class="flex flex-col md:flex-row">
+                        <img src="https://onsitego.com/blog/wp-content/uploads/2019/10/room-cooler.jpg" width="390px">
+                        <p class="px-5 py-5 md:py-0 text-justify">
+                            With years of experience, top-tier customer service, and cutting-edge technology, we ensure your home or business stays cool all year round.
+                        </p>
+                    </div>
                 </div>
-                <div class="col-span-5">
-                    <div>
-                        <h2>Mission</h2>
+                <div class="col-span-12 md:col-span-5">
+                    <div class="bg-blue-50 p-5 mb-5">
+                        <h2 class="text-2xl font-semibold"><i class="fa fa-bullseye" aria-hidden="true"></i> Mission</h2>
                         <p>
                             To provide high-quality, energy-efficient air conditioning solutions with excellent customer service.
                         </p>
                     </div>
-                    <div>
-                        <h2>Vision</h2>
+                    <div class="bg-blue-50 p-5 mb-5">
+                        <h2 class="text-2xl font-semibold"><i class="fa fa-eye" aria-hidden="true"></i> Vision</h2>
                         <p>
                             To be the leading provider of innovative and sustainable cooling solutions.
                         </p>
@@ -87,6 +85,45 @@ Vision: "To be the leading provider of innovative and sustainable cooling soluti
                 </div>
             </div>
         </section>
+
+        <section id="viewMoreContent" class="px-3 py-14 justify-items-center">
+            <div class="flex flex-col md:flex-row pb-12">
+                <button class="md:mx-3 my-3 md:my-0 px-4 py-2 bg-black rounded-sm shadow-md hover:bg-gray-700 transition text-white text-xl font-semibold" onclick="location.href = 'services.html'">
+                    Check out our services!
+                </button>
+
+                <button class="md:mx-3 my-3 md:my-0 px-4 py-2 bg-black rounded-sm shadow-md hover:bg-gray-700 transition text-white text-xl font-semibold" onclick="location.href = 'faq.html'">
+                    Have a question?
+                </button>
+            </div>
+        </section>
+
+        <footer class="bg-black text-white grid grid-cols-2 p-3 justify-items-center">
+            <div class="col-span-1 mx-72">
+                This website is made for educational purposes.
+            </div>
+            <div class="col-span-1 mx-72">
+                <a href="#" class="text-white mx-2" target="_blank">
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                </a>
+
+                <a href="#" class="text-white mx-2" target="_blank">
+                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                </a>
+
+                <a href="#" class="text-white mx-2" target="_blank">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+
+                <a href="#" class="text-white mx-2" target="_blank">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </a>
+
+                <a href="#" class="text-white mx-2" target="_blank">
+                    <i class="fa fa-phone-square" aria-hidden="true"></i>
+                </a>
+            </div>
+        </footer>
 
         <!-- FLOWBITE JS -->
         <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
